@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+		Author: micah
+		Date: week 7
+		Filename: Order.html 
+	-->
+    <meta charset="utf-8" />
+    <title>Order From Us</title>
+    <link rel="stylesheet" href="..\assets\css\base.css">
+    <link rel="stylesheet" href="..\assets\css\order.css">
+</head>
+
+<body>
+    <header>
+        <img src="..\assets\img\logo.png" alt="Logo" />
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="builds.html">Our Builds</a></li>
+                <li><a href="gallery.html">Build Gallery</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="classifieds.html">Classifieds</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="http://www.example.com/jcs" method="post">
+        <div>
+            <label for="4linkBox">Choose your rear end</label>
+            <select name="brackets" id="4linkBox">
+                <option value="choose">Choose one</option>
+                <option value="fabmod">Fabricated Modular</option>
+                <option value="radial">Radial</option>
+                <option value="bigs">Big Tire</option>
+                <option value="smalls">Small Tire</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>4 link bracket options</legend>
+            <div>
+                <label>Regular Prep</label>
+                <input type="radio" name="regprep" value="yes">
+                <input type="radio" name="regprep" value="no" checked>
+            </div>
+            <div>
+                <label>No Prep</label>
+                <input type="radio" name="noprep" value="yes">
+                <input type="radio" name="noprep" value="no" checked>
+            </div>
+            <div>
+                <label>Serious No Prep/Street</label>
+                <input type="radio" name="street" value="yes">
+                <input type="radio" name="street" value="no" checked>
+            </div>
+            <div>
+                <label>Radial Prep</label>
+                <input type="radio" name="radial" value="yes" checked>
+                <input type="radio" name="radial" value="no">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Ladder bar bracket options</legend>
+            <div>
+                <label>Regular Prep</label>
+                <input type="radio" name="regprep" value="yes">
+                <input type="radio" name="regprep" value="no">
+            </div>
+            <div>
+                <label>No Prep</label>
+                <input type="radio" name="noprep" value="yes">
+                <input type="radio" name="noprep" value="no">
+            </div>
+            <div>
+                <label>Serious No Prep/Street</label>
+                <input type="radio" name="street" value="yes">
+                <input type="radio" name="street" value="no">
+            </div>
+            <div>
+                <label>Radial Prep</label>
+                <input type="radio" name="radial" value="yes">
+                <input type="radio" name="radial" value="no">
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Add to your Order">
+        </div>
+    </form>
+    <form action="http://www.example.com/redball/customer" method="post">
+        <div>
+            <label for="nameBox">Name*</label>
+            <input type="text" name="custName" id="nameBox" placeholder="First and Last Name" required />
+        </div>
+        <div>
+            <label for="phoneBox">Phone*</label>
+            <input type="tel" name="custPhone" id="phoneBox" required placeholder="(nnn) nnn-nnnn"
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+        </div>
+        <div>
+            <input type="radio" name="orderType" id="delivery" checked />
+            <label for="delivery">Delivery</label>
+            <input type="radio" name="orderType" id="pickup" />
+            <label for="pickup">Pickup</label>
+        </div>
+        <fieldset id="deliveryInfo">
+            <legend>Delivery Options</legend>
+            <textarea name="delAddress" id="addressBox" placeholder="Enter delivery address"></textarea>
+        </fieldset>
+        <fieldset id="pickupInfo">
+            <legend>Pickup Options</legend>
+            <label for="pickupBox">Pickup Time</label>
+            <input type="time" name="pickupTime" id="pickupBox" disabled />
+        </fieldset>
+        <div>
+            <input type="submit" value="Place your order" />
+        </div>
+    </form>
+
+    <footer>
+        Jason's Chassis Shop • 411 Belde Drive, Charlotte NC &nbsp; 28201 • 704-555-1151
+    </footer>
+</body>
+
+</html>
