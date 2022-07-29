@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*
+	Author: micah
+	Date: week 7
+	Filename: aboutus.css
+*/
+
+aside {
+    border: 1px solid black;
+}
+
+aside > img {
+    display: block;
+    height: 40%;
+    margin: auto auto;
+}
+
+body {
+    max-height: 800px;
+}
+
+body {
+    display: grid; 
+	grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header header"
+                         "start aside"
+                         "table table"
+                         "footer footer";
+	grid-column-gap: 15px;
+    grid-template-rows: 200px 300px 20px;
+}
+
+body > header {
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+body > article {
+    grid-area: start;
+    grid-row: 2;
+}
+
+body > aside {
+    grid-area: aside;
+    grid-row: 2;
+}
+
+div#table {
+    grid-area: table;
+}
+
+footer {
+    grid-column: 1/-1;
+    text-align: center;
+}
+aside p {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}

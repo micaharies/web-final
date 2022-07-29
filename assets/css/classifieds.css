@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*
+	Author: micah
+	Date: week 7
+	Filename: classifieds.css
+*/
+
+article h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+figcaption {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+article p {
+    padding-left: 40px;
+}

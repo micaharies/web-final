@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*
+	Author: micah
+	Date: week 7
+	Filename: order.css
+*/
+
+form {
+   display: flex;
+   flex-flow: row wrap;
+} 
+
+fieldset {
+   flex: 1 1 300px; 
+   margin: 10px;  
+}
+
+div {
+   margin: 5px;
+   width: 100%;
+}
+
+label {
+   display: inline-block;
+   width: 300px;
+}
+
+fieldset#pickupInfo label, fieldset#deliveryInfo label {
+   margin-bottom: 10px;
+   width: 100%;
+}
+
+textarea {
+   display: block;
+   width: 90%;
+   height: 50px;
+}
+
+input[type="submit"] {
+   height: 50px;
+   width: 200px;
+}
+
+input#sizeBox {
+   width: 240px;
+}

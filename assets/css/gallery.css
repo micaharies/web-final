@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*
+	Author: micah
+	Date: week 7
+	Filename: gallery.css
+*/
+
+article p {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}

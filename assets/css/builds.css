@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*
+	Author: micah
+	Date: week 7
+	Filename: builds.css
+*/
+
+table.achievements {
+    border: 5px solid black;
+    margin: auto;
+}
+
+table.achievements td, table.achievements th {
+    border: 1px outset grey;
+    padding: 5px;
+    vertical-align: top;
+}
